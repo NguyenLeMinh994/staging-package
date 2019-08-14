@@ -1,0 +1,139 @@
+@charset "UTF-8";
+body.m-content--skin-light2 {
+    background-color: #f2f3f8;
+}
+.ui-front{
+	z-index:1051;
+}
+.complete_loading
+{
+    background: url("../media/img/Eclipse-1s-30px.gif");
+    background-size: 30px 30px;
+	background-repeat: no-repeat;
+    background-position: right;
+}
+
+.m-topbar .m-topbar__nav.m-nav>.m-nav__item.m-topbar__user-profile>.m-nav__link .m-topbar__welcome {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #5867dd;
+}
+
+.m-topbar .m-topbar__nav.m-nav>.m-nav__item.m-topbar__user-profile>.m-nav__link .m-topbar__username {
+    color: #f33e5c;
+}
+
+.m-form .m-form__section{
+    margin: 20px 0 20px 0;
+}
+
+/* Start Background Color Slide Menu */
+/* 
+.m-brand.m-brand--skin-dark {
+    background-color: #333 !important;
+}
+
+.m-aside-left.m-aside-left--skin-dark {
+    background-color: #333 !important;
+}
+*/
+/* End Background Color Slide Menu */
+    
+/* Start Text and Icon */
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__section .m-menu__section-text{
+    color: #9699a2;
+}
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item>.m-menu__heading .m-menu__link-text, .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item>.m-menu__link .m-menu__link-text{
+    color: #fff;
+}
+
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item>.m-menu__heading .m-menu__link-icon, .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item>.m-menu__link .m-menu__link-icon{
+    color: #fff;
+}
+/* End Text and Icon */
+
+/* Start Text and Icon When Hover */
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item:not(.m-menu__item--parent):not(.m-menu__item--open):not(.m-menu__item--expanded):not(.m-menu__item--active):hover>.m-menu__heading .m-menu__link-icon, .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item:not(.m-menu__item--parent):not(.m-menu__item--open):not(.m-menu__item--expanded):not(.m-menu__item--active):hover>.m-menu__link .m-menu__link-icon 
+{
+    color: hsla(0,0%,100%,.7) !important;
+}
+
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item:not(.m-menu__item--parent):not(.m-menu__item--open):not(.m-menu__item--expanded):not(.m-menu__item--active):hover>.m-menu__heading .m-menu__link-text, .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item:not(.m-menu__item--parent):not(.m-menu__item--open):not(.m-menu__item--expanded):not(.m-menu__item--active):hover>.m-menu__link .m-menu__link-text 
+{
+    color: hsla(0,0%,100%,.7) !important;
+}
+/* End Text and Icon When Hover */
+
+/* Start Text and Icon When Active */
+@media screen and (min-width: 1025px) {
+    .m-aside-left--minimize .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item>.m-menu__link>.m-menu__link-icon
+    {
+        color: #fff ;
+    }
+}
+
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--active 
+{
+    background: #5867dd;
+}
+
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--active>.m-menu__heading .m-menu__link-text, .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--active>.m-menu__link .m-menu__link-text 
+{
+    color: #fff ;
+}
+
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--active>.m-menu__heading .m-menu__link-icon, .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--active>.m-menu__link .m-menu__link-icon
+{
+    color: #fff;
+}
+/* End Text and Icon When Active */
+
+.m-aside-menu .m-menu__nav>.m-menu__section
+{
+    margin: 5px 0 0 0;
+}
+
+.m-checkbox-inline .m-checkbox, .m-checkbox-inline .m-radio, .m-radio-inline .m-checkbox, .m-radio-inline .m-radio 
+{
+    margin-right:10px;
+}
+
+/* Start Manual Select2 Css */
+.select2-container--bootstrap .select2-selection--multiple .select2-selection__choice
+{
+    color: #fff !important;
+    background: #5867dd !important;
+}
+.select2-container--bootstrap .select2-selection--multiple .select2-selection__choice__remove 
+{
+    color: #fff !important;
+}
+/* End Manual Select2 Css */
+
+/* Start Manual Typehead Css */
+.twitter-typeahead, .tt-hint, .tt-input, .tt-menu { 
+    width: 100%; 
+}
+/* End Manual Typehead Css */
+
+/* Start Step Label Metronic Wizard Css */
+.m-wizard.m-wizard--4 .m-wizard__head .m-wizard__nav .m-wizard__steps .m-wizard__step .m-wizard__step-info .m-wizard__step-label{
+    padding-left:10px;
+    font-weight:300;
+}
+
+.m-separator.m-separator--dashed {
+    border-bottom: 1px dashed #9699a2
+}
+
+/* Full Calendar */
+.fc-unthemed .fc-event .fc-content:before, .fc-unthemed .fc-event-dot .fc-content:before {
+    display:none;
+}
+
+.asidebar-font-customize {
+    font-weight: normal !important;
+    font-size: 9.5pt !important;
+}

@@ -1,0 +1,393 @@
+/*
+** Header
+*/
+header{
+	top:0;
+	left:0;
+	z-index:20;
+	padding:15px 0;
+	width:100%;
+	background:#fff;
+	-webkit-transform: translate3d(0,0,0);
+}
+.header-inner {
+	margin:0 auto;
+	position:relative;
+	max-width: 1192px;
+	width:92%;
+	/* padding-right:90px; */
+}
+.logo-holder {
+	float:left;
+	position:relative;
+	max-width:250px;
+	z-index:21;
+}
+
+/*
+** Footer
+*/
+footer{
+	z-index:20;
+	padding:10px 0;
+	width:100%;
+	background:#1e1e1e;
+	-webkit-transform: translate3d(0,0,0);
+}
+.footer-inner {
+	margin:0 auto;
+	position:relative;
+	max-width: 1192px;
+	width:92%;
+	/* padding-right:90px; */
+}
+.footer-inner_info{
+	color:#999;
+	margin:0;
+	padding:0;
+}
+
+ol, ul { list-style: none;}
+
+/*
+** Navigation
+*/
+/*------ navigation  ------------------------------------------------*/ 
+.nav-holder {
+	float:right;
+	position:relative;
+}
+nav {
+	position:relative;
+	float:left;
+	width:100%;
+}
+nav li{
+	float:left;
+	position:relative;
+}
+nav li ul {
+	margin: 30px 0 0 0;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	min-width:150px;
+	top: 38px;
+	left: 0;
+	z-index: 1;
+	background: #fff;
+	transition: all .2s ease-in-out;
+	border-bottom:4px solid #000;  
+}
+nav li:hover > ul {
+	opacity: 1;
+	visibility: visible;
+	margin: 0;
+}
+nav li ul li ul {
+	top: 0;
+	left: -100%;
+}
+nav li ul li:hover  > ul  {
+	opacity: 1;
+	visibility: visible;
+	right: 100%;
+}	
+nav li ul li {
+	float: none;
+	display: block;
+	border: 0;
+}
+nav li a {
+	float: left;
+	padding: 20px 22px;
+	line-height: 1;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #333;
+	top:0;
+	position:relative;
+	-webkit-transition: all 100ms linear;
+    -moz-transition: all 100ms linear;
+    -o-transition: all 100ms linear;
+    -ms-transition: all 100ms linear;
+    transition: all 100ms linear;
+}
+nav li a:before {
+	width:0;
+	height:2px;
+}
+nav li a:after {
+	width:2px;
+	height:0;
+}
+nav li a.act-link:before {
+	width:10px;
+}
+nav li a.act-link:after {
+	height:10px;
+}
+nav li a.signup_link{
+	border-radius:4px;
+	border:1px solid #007bff;
+	font-weight:600;
+	text-transform:uppercase;
+	color:#007bff;
+}
+nav li a.signup_link:hover{
+	color:#007bff;
+	background-color:#eaeaea;
+	border:1px solid #007bff;
+	text-decoration:none;
+}
+nav li a.language_link,
+nav li a.language_link:hover{
+	color:#333;
+	text-decoration:none;
+}
+
+.nav-button-holder {
+	float:right;
+	border-left:1px solid rgba(255,255,255,0.4);
+	margin:0 0 0 10px;
+	padding-left:22px;
+	display:none;
+}
+.nav-button {
+	float:right;
+	width:30px;
+	height:24px;
+	position:relative;
+	margin-top:22px;
+	cursor:pointer;
+}
+.nav-button span {
+	float:left;
+	width:100%;
+	height:4px;
+	background:#000;
+	margin-bottom:2px;
+	position:relative;
+}
+
+/*
+** Wrapper
+*/
+.cus-m-login__wrapper,
+.cus-content__page{
+	margin:0 auto !important;
+	position:relative;
+	max-width: 1192px !important;
+	width:92% !important;
+}
+.m-login.m-login--2 .m-login__wrapper{padding:6% 0rem 1rem 0rem !important;margin:0 auto 2rem auto;overflow:hidden}
+
+/*
+** Login Box
+*/
+.m-login__container{
+	margin-left:0 !important;
+}
+.cus_login_box{
+	background-color:#fff;
+	padding:15px;
+	border-radius:5px;
+}
+.m-form__group .form-control{
+	border:1px solid #ccc !important;
+	border-radius: 5px !important;
+	background:#fff !important;
+}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__head .m-login__title{color:#333 !important;font-size:35px !important;text-align:left !important;margin:0 !important;}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__head .m-login__desc{color:#c2acf4}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form{color:#333 !important}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .form-control{color:#333 !important;background:#fff !important}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .form-control::-moz-placeholder{color:#ccc !important;opacity:1}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .form-control:-ms-input-placeholder{color:#ccc !important}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .form-control::-webkit-input-placeholder{color:#ccc !important}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .form-control:focus{color:#333 !important}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .form-control:focus::-moz-placeholder{color:#ccc !important;opacity:1}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .form-control:focus:-ms-input-placeholder{color:#ccc !important}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .form-control:focus::-webkit-input-placeholder{color:#ccc !important}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-checkbox{color:#5b5b5b !important}
+
+.m-login.m-login--2 .m-login__wrapper .m-login__container .m-login__form .m-login__form-action{margin-top:10px !important;}
+
+.m-checkbox.m-checkbox--light.m-checkbox--disabled{opacity:.8 ;filter:alpha(opacity=80) }
+.m-checkbox.m-checkbox--light>span{border:1px solid #5b5b5b !important}
+.m-checkbox.m-checkbox--light>span:after{border:solid #5b5b5b !important}
+.m-checkbox.m-checkbox--light>input:disabled ~ span:after{border-color:#5b5b5b !important}
+.m-checkbox.m-checkbox--light>input:checked ~ span{border:1px solid #5b5b5b !important}
+.m-checkbox.m-checkbox--light.m-checkbox--check-bold>input:checked ~ span{border:2px solid #5b5b5b !important}
+.m-checkbox.m-checkbox--light>input:disabled ~ span{opacity:.6 ;filter:alpha(opacity=60) }
+.m-checkbox.m-checkbox--light.m-checkbox--solid>span{border:1px solid transparent !important}
+.m-checkbox.m-checkbox--light.m-checkbox--solid>span:after{border:solid #282a3c !important}
+.m-checkbox.m-checkbox--light.m-checkbox--solid>input:focus ~ span{border:1px solid transparent !important}
+.m-checkbox.m-checkbox--light.m-checkbox--solid>input:checked ~ span{background:#fff}
+
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-link{color:#5b5b5b !important}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-link:hover{color:#333 !important}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-sub .m-link:hover:after{
+	border-bottom:1px solid #5b5b5b !important;opacity:.3 ;filter:alpha(opacity=30) }
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-action .m-login__btn{
+	color:#fff !important;border-color:#6699CC !important;background-color:#6699CC !important;}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-action .m-login__btn.m-login__btn--primary{
+	color:#fff !important;border-color:#6699CC !important}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-action .m-login__btn.m-login__btn--primary:focus,.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__form .m-login__form-action .m-login__btn.m-login__btn--primary:hover{
+	border-color:#1f5ca5 !important;color:#fff !important;background-color:#1f5ca5 !important;}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__account .m-login__account-msg{color:#5b5b5b !important}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__account .m-login__account-link{color:#333 !important}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__account .m-login__account-link:hover{color:#333 !important}
+.m-login.m-login--2.m-login-2--skin-1 .m-login__container .m-login__account .m-login__account-link:hover:after{
+	border-bottom:1px solid #5b5b5b !important;opacity:.3 ;filter:alpha(opacity=30) }
+
+
+.m-form_customize{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin: 3rem 0;
+}
+
+.m-login__form,
+.m-register__form,
+.m-pwd-recovery__form{
+	margin:2rem auto !important;
+}
+.m-register__form-actions{
+	margin-top:7%;
+}
+.m-login__form-action button,
+.m-register__form-actions button{
+	font-weight:500;
+	text-transform:uppercase;
+}
+.m-login.m-login--2 .m-login__wrapper .m-pwd-recovery__container{width: 430px;}
+
+/*
+* Content Box
+*/
+.cus_content_box{
+	/* padding:0 0 0 7rem; */
+	position:relative;
+	box-sizing:border-box;
+}
+.cus_content_box .m-login__welcome,
+.cus_content_box .m-login__msg{
+	color:#fff;
+}
+.cus_content_box .m-login__welcome{
+	font-size:3.5rem;
+	margin-bottom:2rem;
+}
+.cus_content_box .m-login__msg{
+	font-size:1.4rem;
+}
+.cus_content_box .m-login__msg b{
+	font-weight:500 !important;
+}
+.cus_content_box .m-login__new{
+	font-size:1rem;
+	font-weight:bold;
+	color:#fff;
+}
+.m-link span{
+	color:#333 !important;
+	font-size:9.5pt;
+}
+.cus_content_box .m-login__new span{
+	text-transform:uppercase;
+	background-color:#f4516c;
+	border-radius:20px;
+	padding:5px 10px;
+}
+
+.m-form__helper-customize{
+	display:inline-block;
+	color: #7b7e8a;
+	font-weight: 300;
+	font-size: .85rem;
+	padding-top: 7px;
+}
+
+/*------  Responsive ------------------------------------------------------*/
+@media only screen and (max-width: 480px){
+	.m-login.m-login--2 .m-login__wrapper .m-pwd-recovery__container{width: 100%;}
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+	.m-login.m-login--2 .m-login__wrapper .m-login__container{width: 370px !important}
+}
+
+@media only screen and (max-width: 756px) {
+	.nav-button-holder {
+		display:block;
+	}
+	.nav-holder {
+		position:absolute;
+		top:72px;
+		left:0;
+		width:100%;
+		background:#fff;
+		padding:30px 0;
+		display:none;
+		height:auto;
+		overflow:auto;
+	}
+	nav ul li {
+		float:left;
+		width:100%; 
+		margin-bottom:10px;
+		text-align:left;
+		left:0;
+		opacity:1;
+		right: 0;
+	}
+	nav ul li a.signup_link{
+		margin-left:22px;
+	}
+	
+	.cus_content_box{
+		margin-top:20px;
+	}
+	.m-login.m-login--2 .m-login__wrapper .m-login__container .m-login__form .m-login__form-action .btn{margin-top:0px !important;}
+}
+
+@media (min-width: 992px) {
+	.nav-holder {
+		display:block !important;
+	}
+}
+/*
+** custom Modal Register
+*/
+.modal-header,
+.modal-footer{
+	padding: 15px 25px !important;
+}
+.modal-header{
+	background:#5867dd !important;
+	border:1px solid #5867dd !important;
+}
+.modal-header .modal-title{
+	color:#fff !important;
+}
+
+/*
+** custom sweetaler
+*/
+.swal2-popup .swal2-header{
+	flex-direction: row !important;
+}
+.swal2-popup #swal2-content{
+	text-align:justify !important;
+}
+.swal2-popup .swal2-actions{
+	margin:0 auto !important
+}
